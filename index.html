@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section>
+					<h1>Lodash </h1>
+					<p>
+						A modern JavaScript utility library delivering modularity, performance & extras.
+					</p>
+					<a href="#" class="navigate-right">
+						<img width="178" height="238"
+							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Right arrow">
+					</a>
+				</section>
+
+				<section>
+					<h1>Why Lodash?</h1>
+					<ul>
+						<li>
+							Lodash makes JavaScript easier by taking the hassle out of working with arrays, numbers,
+							objects, strings, etc.
+						</li>
+						<li>
+							Lodash’s modular methods are great for:
+						</li>
+						<li>
+							Iterating arrays, objects, & strings
+						</li>
+						<li>
+							Manipulating & testing values
+						</li>
+						<li>
+							Creating composite functions
+						</li>
+					</ul>
+				</section>
+				<section data-markdown>
+					## Installation
+
+					### In a browser:
+					```
+					*script> src="lodash.js" */script>
+					```
+
+					</script>
+
+				</section>
+				<section data-markdown>
+					## Installation
+
+					### Using npm:
+					```
+					$ npm i -g npm
+					$ npm i --save lodash
+					```
+
+					</script>
+
+				</section>
+				<section data-markdown>
+					## Installation
+
+					### In Node.js:
+					```
+					// Load the full build.
+					var _ = require('lodash');
+
+					// Load the core build.
+					var _ = require('lodash/core');
+					// Load the FP build for immutable auto-curried iteratee-first data-last methods.
+					var fp = require('lodash/fp');
+
+					// Load method categories.
+					var array = require('lodash/array');
+					var object = require('lodash/fp/object');
+
+					// Cherry-pick methods for smaller browserify/rollup/webpack bundles.
+					var at = require('lodash/at');
+					var curryN = require('lodash/fp/curryN');
+					```
+					</script>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Lodash.js</h1>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a
+								href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+					</p>
+					<a href="#" class="navigate-down">
+						<img width="178" height="238"
+							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					</a>
+				</section>
+				<section>
+					<h1>Lodash.js 1</h1>
+					<h2>Basement Level 1</h2>
+					<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.
+					</p>
+				</section>
+				<section>
+					<h3>Lodash Js </h3>
+					<h2>Basement Level 1</h2>
+					<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.
+					</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Basement Level 1</h2>
+					<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.
+					</p>
+				</section>
+				<section>
+					<h2>Basement Level down 1</h2>
+					<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.
+					</p>
+				</section>
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element
+						to
+						zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom
+						back
+						out.
+					</p>
+					<p>
+						(NOTE: Use ctrl + click in Linux.)
+					</p>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+									## Markdown support
+			
+									Write content using inline or external Markdown.
+									Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+			
+									```
+									<section data-markdown>
+									  ## Markdown support
+			
+									  Write content using inline or external Markdown.
+									  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+									</section>
+									```
+					</script>
+				</section>
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span
+								class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p>
+							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+							<span style="display: inline-block;" class="fragment fade-up">up, </span>
+							<span style="display: inline-block;" class="fragment fade-down">down, </span>
+							<span style="display: inline-block;" class="fragment fade-left">left</span>
+						</p>
+						<p class="fragment fade-in-then-out">fade-in-then-out</p>
+						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span
+								class="fragment highlight-blue">blue</span> <span
+								class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
+			</section>
+			<section>
+				<section>
+					<p>1</p>
+
+				</section>
+				<section>
+					<p>2</p>
+				</section>
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
